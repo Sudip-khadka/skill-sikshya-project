@@ -1,4 +1,49 @@
 .footer{
     padding: 50px;
     background-color: #082D4A;
+    width:100%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+.footerabove{
+    width:90%;
+    display:flex;
+    justify-content: space-between;
+}
+.footerabove .social{
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    gap:25px;
+}
+.cardFooterb{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+.cardFooterb a{
+    text-decoration: none;
+    color: white;
+}
+.cardFooterb .social{
+    margin-top: 5px;
+}
+.cardFooterc{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.cardFooterc img{
+    width:150px;
+}
+.hr{
+    width:95%;
+}
+.footerimage{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
