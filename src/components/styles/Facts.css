@@ -1,0 +1,24 @@
+.facts{
+    background-color: #082D4A;
+    color:white;
+    width:80%;
+    margin-top:-8%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 80px 10px; 
+    text-align: center;
+    z-index:3;
+    border-radius: 20px;
+}
+.item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+    gap:5px;
+}
+.item h1{
+    margin: 0px;
+}

@@ -1,0 +1,28 @@
+nav{
+    padding:20px 50px;
+    display:flex;
+    justify-content: space-between;
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+.right button{
+    border:none;
+    background-color: #082D4A;
+    color:white;
+    padding:10px 20px;
+    border-radius: 10px;
+}
+.middle{
+    display: flex;
+    gap:0px 40px;
+    font-weight: bold;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.middle a{
+    text-decoration: none;
+    color:black;
+}

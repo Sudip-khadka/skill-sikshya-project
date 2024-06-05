@@ -1,0 +1,145 @@
+.home {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Space elements evenly */
+    align-items: center; /* Center contents vertically */
+    padding: 0px 70px; /* Add padding to give space on the sides */
+    overflow: hidden;
+}
+
+.lefthome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    flex: 1; /* Allow it to take up available space */
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(8, 45, 74, 0.5); /* Color overlay with desired opacity */
+    z-index: 1; /* Ensure it stays in front of the background image but behind the content */
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../assets/fab8f3baf4759353b5ffc0513cd72614.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0; /* Ensure it stays behind the overlay */
+}
+
+.text {
+    position: relative; /* Ensure text is above the background and overlay */
+    z-index: 2; /* Ensure it stays above the pseudo-elements */
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.image {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 25px;
+}
+
+.imageRight {
+    width: 1500px; /* Adjusted dimensions */
+    height: 1500px;
+    position: relative;
+    z-index: 2;
+    top:93%;
+    left: 10%;
+    display: flex;
+    background-color: rgba(8, 45, 74, 0.6);
+    border-radius: 50%;
+    justify-content: center; /* Center the image inside */
+    align-items: center; /* Center the image inside */
+}
+
+.imageRotate {
+    width:2000px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the images inside */
+    align-items: center; /* Center the images inside */
+   animation: rotateAnimation 8s linear infinite; /* Apply animation */
+}
+
+.imageRight img {
+    height: 500px; /* Ensure the image scales within the container */
+    width: 500px; /* Ensure the image scales within the container */
+    /*object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.rotate1 {
+    position: relative;
+    top:12%;
+    left:-20%;
+    
+}
+.rotate2{
+    position: relative;
+    left:40%;
+    height: 500px !important; 
+    width: 500px !important; 
+}
+.rotate3{
+    position: relative;
+    top:29%;
+    left:25%;
+    height: 500px !important; 
+    width: 500px !important; 
+    
+}
+.rotate4{
+    position: relative;
+    top:-30%;
+    left:-40%;
+    height:700px !important;
+    width:700px !important;
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    12.5% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    37.5% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    62.5% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    87.5% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
