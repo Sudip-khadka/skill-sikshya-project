@@ -1,28 +1,88 @@
-nav{
-    padding:20px 50px;
-    display:flex;
+/* styles/Navbar.css */
+.active {
+    text-decoration: underline #FF785A;
+  }
+  
+  nav {
+    padding: 20px 50px;
+    display: flex;
     justify-content: space-between;
-}
-.right{
+    width: 100%;
+  }
+  
+  .right {
     display: flex;
     align-items: center;
-}
-.right button{
-    border:none;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .right button {
+    border: none;
     background-color: #082D4A;
-    color:white;
-    padding:10px 20px;
+    color: white;
+    padding: 10px 20px;
     border-radius: 10px;
-}
-.middle{
+  }
+  
+  .right .nav-responsive {
+    display: none;
+  }
+  
+  .middle {
     display: flex;
-    gap:0px 40px;
+    gap: 0px 40px;
     font-weight: bold;
     font-size: 20px;
     align-items: center;
     justify-content: center;
-}
-.middle a{
+  }
+  
+  .middle a {
     text-decoration: none;
-    color:black;
-}
+    color: black;
+  }
+  
+  /* For mobile */
+  @media only screen and (max-width: 767px) {
+    nav {
+      padding: 20px 30px;
+      flex-direction: column;
+      align-items: start;
+    }
+  
+    .logo,
+    .right {
+      width: 100%;
+    }
+  
+    .logo {
+      order: 1;
+    }
+  
+    .right {
+        position: absolute;
+        top:8%;
+        left:50%;
+      order: 2;
+    }
+  
+    .right .nav-responsive {
+      display: flex;
+    }
+  
+    .middle {
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      align-items: start;
+      gap: 10px 0px;
+      margin-top: 10px; /* Add some spacing */
+      order: 3;
+    }
+  
+    .middle.show {
+      display: flex;
+    }
+  }
+  

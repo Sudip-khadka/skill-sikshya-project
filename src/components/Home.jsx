@@ -16,7 +16,7 @@ function Home() {
 with <span className="colored underlined">Cnex</span> </h1>
 <p>Order, Preorder, and Book - Your Ultimate Destination for Female Products and Services</p>
       </div>
-      <div className="image">
+      <div className="homeimage">
         <img src={apple} alt="applestore" srcSet="" />
         <img src={android} alt="playstore" srcSet="" />
       </div>

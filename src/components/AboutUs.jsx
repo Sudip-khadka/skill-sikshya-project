@@ -13,29 +13,30 @@ import OurStory from './OurStory'
 
 function AboutUs() {
   return (
-    <div className='aboutus'>
-      
+    <div className='aboutus' id='aboutus'>
       <Facts/>
       <div className="aboutusElement">
       <span className='colored'>- ABOUT US</span>
       <h1><span className="colored underlined">Pioneering Female</span>-Centric Solutions for the Modern Women</h1>
     </div>
       <div className="imagecontainers">
-        <div className="imageleft">
-          <div className="firstrow">
+        <div className="upimages">
+            <div className="imageleft">
             <img src={Image1} alt="image1" srcSet="" />
+            <img src={Image2} alt="image2" srcSet="" />
+            </div>
+            <div className="imageright">
+                <img src={Image6} alt="image6" srcSet="" />
+                <img src={Image7} alt="image7" srcSet="" />
+                <img src={Image8} alt="image8" srcSet="" />
+            </div>
+        </div>
+        <div className="imagemiddle">
+            <div className="imagemiddlefirst">
             <img src={Image3} alt="image3" srcSet="" />
             <img src={Image4} alt="image4" srcSet="" />
-          </div>
-          <div className="secondrow">
-            <img src={Image2} alt="image2" srcSet="" />
-            <img src={Image5} alt="image5" srcSet="" />
-          </div>
-        </div>
-        <div className="imageright">
-            <img src={Image6} alt="image6" srcSet="" />
-            <img src={Image7} alt="image7" srcSet="" />
-            <img src={Image8} alt="image8" srcSet="" />
+            </div>
+            <img src={Image5} alt="image5" srcSet="" className='lastimage'/>
         </div>
       </div>
       <OurStory/>

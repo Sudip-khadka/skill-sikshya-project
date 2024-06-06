@@ -3,7 +3,7 @@ import './styles/ContactUs.css'
 
 function ContactUs() {
   return (
-    <div className='contact'>
+    <div className='contact' id='contact'>
         <div className="texta">
         <span className="colored">- Reach Out to Us</span>
         <h1><span className="colored underlined">Connect</span> With Us</h1>

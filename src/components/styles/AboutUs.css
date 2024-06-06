@@ -5,6 +5,8 @@
     align-items: center;
     padding:50px;
     gap:50px;
+    width:100%;
+    height: auto;
 }
 .aboutusElement{
     display:flex;
@@ -12,21 +14,29 @@
     width:50%;
 }
 .imagecontainers{
+    width:80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    position: relative;
+}
+.upimages{
     display:flex;
     gap:20px;
 }
-.imagecontainers .imageright{
-    display: flex;
-    flex-direction: column;
-    gap:20px;
-}
-.imagecontainers .imageleft{
-    display: flex;
-    flex-direction: column;
-    gap:20px;
-}
-.imageleft .firstrow,.imageleft .secondrow{
+.upimages .imageleft , .imageright{
     display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.imagemiddle{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.imagemiddle .imagemiddlefirst{
+    display: flex;
     gap:20px;
 }
 .ourstory{
@@ -59,4 +69,12 @@
     width:150px;
 }
 
-
+@media screen and (max-width:748px) {
+    .imagecontainers{
+        flex-direction: column;
+    }
+    .lastimage{
+        width:100%;
+    }
+    
+}

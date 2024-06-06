@@ -50,7 +50,7 @@
     color: white;
 }
 
-.image {
+.homeimage {
     position: relative;
     z-index: 2;
     display: flex;
@@ -141,5 +141,14 @@
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:746px){
+    .imageRight{
+        display:none;
+    }
+    .homeimage img{
+        width:150px;
     }
 }
