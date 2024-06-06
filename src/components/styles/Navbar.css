@@ -91,5 +91,10 @@
       padding:10px;
 
     }
-    
+    .right {
+      position: absolute;
+      top:3%;
+      left:48%;
+    order: 2;
+  }
   }
