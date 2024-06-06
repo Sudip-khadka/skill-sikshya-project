@@ -62,7 +62,7 @@
     height: 1500px;
     position: relative;
     z-index: 2;
-    top:93%;
+    top:100%;
     left: 10%;
     display: flex;
     background-color: rgba(8, 45, 74, 0.6);
@@ -89,7 +89,7 @@
 
 .rotate1 {
     position: relative;
-    top:12%;
+    top:18%;
     left:-20%;
     
 }
@@ -144,6 +144,12 @@
     }
 }
 
+@media screen and (max-width:1500px) {
+    .imageRight{
+        display:none;
+    }
+}
+
 @media screen and (max-width:746px){
     .home{
         padding:20px;
@@ -153,5 +159,19 @@
     }
     .homeimage img{
         width:150px;
+    }
+}
+@media screen and (max-width:400px){
+    .home{
+        padding:20px;
+    }
+    h2{
+        font-size: 0.8rem !important;
+    }
+    .imageRight{
+        display:none;
+    }
+    .homeimage img{
+        width:100px;
     }
 }
