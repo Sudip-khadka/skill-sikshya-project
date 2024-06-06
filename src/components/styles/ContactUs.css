@@ -72,8 +72,21 @@
     box-shadow: 0 0 5px rgba(255, 120, 90, 0.5);
   }
   @media screen and (max-width:760px) {
+    .contact{
+      padding:20px 0px; 
+    }
+    .texta{
+      width:90% !important;
+      gap:10px !important;
+    }
+    .texta h1{
+      margin:0px 5px;
+    }
     .contactform{
-      width:90%;
+      width:80%;
+    }
+    .contactform .firstrow, .contactform .secondrow, .contactform .thirdrow{
+      flex-direction: column;
     }
     .form-group textarea {
       min-height: 70px;

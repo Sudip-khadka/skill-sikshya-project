@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between; /* Space elements evenly */
     align-items: center; /* Center contents vertically */
-    padding: 0px 70px; /* Add padding to give space on the sides */
+    padding:70px; /* Add padding to give space on the sides */
     overflow: hidden;
 }
 
@@ -145,6 +145,10 @@
 }
 
 @media screen and (max-width:746px){
+    .home{
+        padding:20px;
+        height:100vh;
+    }
     .imageRight{
         display:none;
     }

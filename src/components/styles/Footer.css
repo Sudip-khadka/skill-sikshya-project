@@ -51,6 +51,15 @@ h2{
     font-size: 1.6rem;
 }
 @media screen and (max-width:760px) {
+    .footer{
+        padding:20px;
+    }
+   .cardFooterc h2, .cardFooterb h2{
+        font-size: 1.2rem;
+    }
+    .cardFooterc p, .cardFooterb p{
+        font-size:0.8rem;
+    }
     .footerabove{
         flex-direction: column;
         gap:20px;
@@ -64,5 +73,8 @@ h2{
     .footerimage img{
         width:50%;
         max-width: 200px;
+    }
+    .copyright p{
+        font-size: 1rem !important;
     }
 }

@@ -79,30 +79,82 @@ h6 {
   display: flex;
 }
 
-@media screen and (max-width: 768px) {
+
+
+@media screen and (min-width:500px) and (max-width: 860px) {
   .testimonialContainer {
       width: 90%; /* Adjust the width for smaller screens */
       height: auto; /* Adjust the height to be auto for better responsiveness */
-  }
-
+      }
+      
   .testimonialCard {
-      width: 80%; /* Adjust this width as necessary for smaller screens */
-      left: 50%;
+    width: 70% !important; /* Adjust this width as necessary for smaller screens */
+      height:50%;
+      left: 70%;
       transform: translateX(-50%);
       top: 20%; /* Adjust top value as necessary */
-  }
-
-  .testimonialContainer img {
-      width: 100%;
-      height: auto;
-  }
-  .testimonialCard p{
-    font-size: 0.8rem !important;
-  }
+      padding:0px 10px;
+      text-align: center;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      }
+      
+      .testimonialContainer img {
+        width: 100%;
+        height: auto;
+        }
+  .testimonial h6{
+    font-size: 1.2rem;
+    width:100%;
+    }
+    .testimonialCard p{
+      font-size: 0.9rem !important;
+    text-align: left;
+    }
   .testimonialCard span{
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
   }
   .sliderright{
     gap:12px;
   }
 }
+
+/*for mobiles*/
+      @media screen and (max-width: 600px) {
+        .testimonialContainer {
+            width: 90%; /* Adjust the width for smaller screens */
+            height: auto; /* Adjust the height to be auto for better responsiveness */
+        }
+      
+        .testimonialCard {
+            width: 70% !important; /* Adjust this width as necessary for smaller screens */
+            height:60%;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20%; /* Adjust top value as necessary */
+            padding:0px 10px;
+            text-align: center;
+            
+        }
+      
+        .testimonialContainer img {
+            width: 100%;
+            height: auto;
+        }
+        .testimonial h6{
+          font-size: 0.9rem;
+          width:100%;
+        }
+        .testimonialCard p{
+          font-size: 0.7rem !important;
+          text-align: left;
+        }
+        .testimonialCard span{
+          font-size: 0.8rem !important;
+        }
+        .sliderright{
+          gap:12px;
+        }
+      }
+      

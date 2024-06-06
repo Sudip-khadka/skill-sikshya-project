@@ -7,6 +7,9 @@
   font-weight: 600;
   font-style: normal;
 }
+.home-container{
+  width:100%;
+}
 p{
   font-size: 1.2rem;
 }
@@ -51,9 +54,21 @@ h1{
   gap: 20px;
 }
 
+.carda {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #062237;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 .card {
   padding: 20px;
   border-radius: 20px;
+  
   background-color: #062237;
   text-align: center;
   display: flex;
@@ -77,9 +92,25 @@ h1{
   gap: 15px;
 }
 @media screen and (max-width:760px){
+  .highlightcards{
+    width:90%;
+    gap:10px;
+  }
+  .card{
+    height: max-content;
+    padding:10px 0px  !important;
+  }
+  .card h2{
+    font-size: 1rem !important;
+  }
+  .card p{
+    font-size: 0.8rem;
+  }
+
+
   .back-to-top{
-    top: 80%;
-  left: 88%;
+    top: 85%;
+  left: 80%;
   }
   .cnex .cards{
     flex-direction: column;
@@ -96,7 +127,7 @@ h1{
 }
   .highlightcards .firstrow .card,
 .highlightcards .secondrow .card{
-  height:350px;
+  height:260px;
 }
 .highlights h1, .highlights p{
   width:80%;
