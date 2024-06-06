@@ -133,3 +133,9 @@ h1{
   width:80%;
 }
 }
+@media screen and (max-width:450px) {
+  .back-to-top{
+    top: 90%;
+  left: 80%;
+  }
+}
