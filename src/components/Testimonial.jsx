@@ -46,6 +46,28 @@ function Testimonial() {
                     <span className="colored">- JOHN CARTER, NEW YORK</span>
                 </div>
             </div>
+            <div className="testimonialContainer">
+                <img src={Testimonial2} alt="" srcSet="" />
+                <div className="testimonialCard">
+                    <div className="top">
+                    <img src={Profile} alt="testimonial giver" srcSet="" />
+                    <h6>“They did an amazing work for our home”</h6>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur justo vitae sapien</p>
+                    <span className="colored">- JOHN CARTER, NEW YORK</span>
+                </div>
+            </div>
+            <div className="testimonialContainer">
+                <img src={Testimonial2} alt="" srcSet="" />
+                <div className="testimonialCard">
+                    <div className="top">
+                    <img src={Profile} alt="testimonial giver" srcSet="" />
+                    <h6>“They did an amazing work for our home”</h6>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur justo vitae sapien</p>
+                    <span className="colored">- JOHN CARTER, NEW YORK</span>
+                </div>
+            </div>
             
         </div>
     </div>

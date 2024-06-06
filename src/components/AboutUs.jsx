@@ -17,7 +17,7 @@ function AboutUs() {
       <Facts/>
       <div className="aboutusElement">
       <span className='colored'>- ABOUT US</span>
-      <h1><span className="colored underlined">Pioneering Female</span>-Centric Solutions for the Modern Women</h1>
+      <h1><span className="colored underlined">Pioneering Female</span> - Centric Solutions for the Modern Women</h1>
     </div>
       <div className="imagecontainers">
         <div className="upimages">

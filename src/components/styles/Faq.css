@@ -46,3 +46,18 @@
     justify-content: space-between;
     align-items: center;
 }
+@media screen and (max-width:760px){
+    .headerfaq{
+        width:80%;
+    }
+    .questioners{
+        flex-direction: column-reverse;
+        width:100%;
+    }
+    .questioners img{
+        width:80%;
+    }
+    .questioner{
+        width:80%;
+    }
+}

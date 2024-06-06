@@ -42,3 +42,8 @@ h1{
 .imagea img{
     width:40%;
 }
+@media screen and (max-width:760px) {
+    .textsimage{
+        width:85%;
+    }
+}

@@ -16,7 +16,7 @@ function Footer() {
           <p>Head Office:</p>
           <p>Sankhamul, Baneshwor</p>
           <p>+977 9818457***</p>
-          <div className="social">
+          <div className="socials">
           <a target='_blank' rel="noopener noreferrer" href="https://github.com/Sudip-khadka">
                             <div className="social">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">

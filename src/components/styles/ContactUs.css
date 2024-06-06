@@ -4,13 +4,15 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
-  }
-  
-  .contact .texta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    }
+    
+    .contact .texta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      text-align: center;
+      width:80%;
   }
   
   h1 {
@@ -22,6 +24,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
   }
   
   .contactform .firstrow,
@@ -68,4 +71,11 @@
     border-color: #ff785a;
     box-shadow: 0 0 5px rgba(255, 120, 90, 0.5);
   }
-  
+  @media screen and (max-width:760px) {
+    .contactform{
+      width:90%;
+    }
+    .form-group textarea {
+      min-height: 70px;
+    }
+  }
