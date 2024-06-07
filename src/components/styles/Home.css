@@ -35,12 +35,13 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url(../../assets/fab8f3baf4759353b5ffc0513cd72614.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     z-index: 0; /* Ensure it stays behind the overlay */
+background-image: url('../../assets/fab8f3baf4759353b5ffc0513cd72614.jpeg');
 }
+
 
 .text {
     position: relative; /* Ensure text is above the background and overlay */
