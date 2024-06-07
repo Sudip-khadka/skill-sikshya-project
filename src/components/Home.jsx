@@ -50,7 +50,7 @@ with <span class='colored underlined'>Cnex</span>`,
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % homeText.length);
-    }, 2000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [homeText.length]);
@@ -66,7 +66,7 @@ with <span class='colored underlined'>Cnex</span>`,
     initial: { opacity: 0, y: 50 },
     animate: { opacity: 1, y: 0 },
     exit: { opacity: 0 },
-    transition: { type: "spring", stiffness: 100, damping: 20 }
+    transition: { duration: 1, ease: "easeInOut", type: "spring", stiffness: 100, damping: 20 }
   };
 
     // Determine the background image based on the current index
