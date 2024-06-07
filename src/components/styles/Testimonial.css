@@ -81,7 +81,7 @@ h6 {
 
 
 
-@media screen and (min-width:500px) and (max-width: 860px) {
+@media screen and (min-width:650px) and (max-width: 860px) {
   .testimonialContainer {
       width: 90%; /* Adjust the width for smaller screens */
       height: auto; /* Adjust the height to be auto for better responsiveness */
@@ -119,9 +119,8 @@ h6 {
     gap:12px;
   }
 }
-
 /*for mobiles*/
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 600px) {
         .testimonialContainer {
             width: 90%; /* Adjust the width for smaller screens */
             height: auto; /* Adjust the height to be auto for better responsiveness */
@@ -130,16 +129,20 @@ h6 {
         .testimonialCard {
             width: 80% !important; /* Adjust this width as necessary for smaller screens */
             height:75%;
-            left: 50%;
+            left: 55%;
             transform: translateX(-50%);
-            top: 15%; /* Adjust top value as necessary */
+            top: 10%; /* Adjust top value as necessary */
             padding:0px 10px;
             text-align: center;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            overflow: hidden;
             
         }
       
         .testimonialContainer img {
-            width: 100%;
+            width: 80%;
             height: auto;
         }
         .testimonialCard img {
