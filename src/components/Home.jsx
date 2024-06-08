@@ -69,16 +69,11 @@ with <span class='colored underlined'>Cnex</span>`,
     transition: { duration: 1, ease: "easeInOut", type: "spring", stiffness: 100, damping: 20 }
   };
 
-    // Determine the background image based on the current index
-    const backgroundImages = [
-      Background1,
-      Background2,
-      Background3,
-      Background4
-    ];
+ 
 
   return (
-    <div className='home' id='home' style={{ backgroundImage: `url(${backgroundImages[currentIndex]})` }}>
+    <div className='home' id='home' 
+    style={{ backgroundImage: `url(${homeText[currentIndex].backgroundImage})` }}>
       <div className="lefthome">
         <div className="text">
           <AnimatePresence mode='wait'>

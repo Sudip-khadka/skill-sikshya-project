@@ -7,6 +7,9 @@
     align-items: center; /* Center contents vertically */
     padding:70px; /* Add padding to give space on the sides */
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .lefthome {
@@ -26,20 +29,6 @@
     width: 100%;
     background-color: rgba(8, 45, 74, 0.5); /* Color overlay with desired opacity */
     z-index: 1; /* Ensure it stays in front of the background image but behind the content */
-}
-
-.home::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: 0; /* Ensure it stays behind the overlay */
-background-image: url('../../assets/fab8f3baf4759353b5ffc0513cd72614.jpeg');
 }
 
 
