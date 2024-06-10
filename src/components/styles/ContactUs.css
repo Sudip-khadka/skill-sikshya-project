@@ -18,7 +18,14 @@
   h1 {
     margin: 0px;
   }
-  
+  .inputfield, textarea{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+  .top-margin{
+    margin-top: -10px;
+  }
   .contactform {
     width: 80%;
     display: flex;
@@ -62,7 +69,7 @@
   }
   .form-group textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height: 50px;
   }
   
   .form-group input:focus,
