@@ -3,6 +3,9 @@ import Logo from '../assets/logo.png';
 import './styles/Navbar.css';
 
 function Navbar() {
+  const [showNav, setShowNav] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('section');
@@ -10,12 +13,8 @@ function Navbar() {
 
       sections.forEach((section) => {
         if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
-          document.querySelectorAll('.middle a').forEach((a) => {
-            a.classList.remove('active');
-            if (a.getAttribute('href') === `#${section.id}`) {
-              a.classList.add('active');
-            }
-          });
+          const currentId = section.id;
+          setActiveSection(currentId);
         }
       });
     };
@@ -26,8 +25,6 @@ function Navbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  const [showNav, setShowNav] = useState(false);
 
   const toggleMenu = () => {
     setShowNav(!showNav);
@@ -48,10 +45,10 @@ function Navbar() {
         <img src={Logo} alt="logo" />
       </div>
       <div className={`middle ${showNav ? 'show' : ''}`} id="middle">
-        <a href="#home" onClick={handleSmoothScroll}>Home</a>
-        <a href="#aboutus" onClick={handleSmoothScroll}>About Us</a>
-        <a href="#faq" onClick={handleSmoothScroll}>FAQ</a>
-        <a href="#contact" onClick={handleSmoothScroll}>Contact Us</a>
+        <a href="#home" className={activeSection === 'home' ? 'active' : ''} onClick={handleSmoothScroll}>Home</a>
+        <a href="#aboutus" className={activeSection === 'aboutus' ? 'active' : ''} onClick={handleSmoothScroll}>About Us</a>
+        <a href="#faq" className={activeSection === 'faq' ? 'active' : ''} onClick={handleSmoothScroll}>FAQ</a>
+        <a href="#contact" className={activeSection === 'contact' ? 'active' : ''} onClick={handleSmoothScroll}>Contact Us</a>
       </div>
       <div className="right">
         <button type="button">Download Now</button>

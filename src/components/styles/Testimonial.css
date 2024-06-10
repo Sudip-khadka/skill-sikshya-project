@@ -140,7 +140,15 @@ h6 {
             overflow: hidden;
             
         }
-      
+        .testimonialContainer{
+          width: 400px !important;
+        height: 200px !important;
+        }
+        .testimonialCard {
+          width: 80% !important;
+          height:70%;
+          top: 10%;
+      }
         .testimonialContainer img {
             width: 80%;
             height: auto;
@@ -165,10 +173,14 @@ h6 {
         }
       }
       
-@media screen and (max-width:370px) {
+@media screen and (max-width:380px) {
+  .testimonialContainer{
+    width: 400px !important;
+  height: 200px !important;
+  }
   .testimonialCard {
-    width: 90% !important; /* Adjust this width as necessary for smaller screens */
-    height:80%;
+    width: 80% !important;
+    height:70%;
     top: 10%;
 }
 }

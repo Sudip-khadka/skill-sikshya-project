@@ -7,6 +7,9 @@
   font-weight: 500;
   font-style: normal;
 }
+.active{
+  text-decoration: underline !important;
+}
 h1{
   font-size: 52px !important;
 }
