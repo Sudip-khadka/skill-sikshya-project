@@ -16,7 +16,7 @@ function AboutUs() {
     <div className='aboutus' id='aboutus'>
       <Facts/>
       <div className="aboutusElement">
-      <span className='colored'>- ABOUT US</span>
+      <span className='colored gap'>- ABOUT US</span>
       <h1><span className="colored underlined">Pioneering Female</span> - Centric Solutions for the Modern Women</h1>
     </div>
       <div className="imagecontainers">

@@ -55,7 +55,7 @@ h2{
         padding:20px;
     }
    .cardFooterc h2, .cardFooterb h2{
-        font-size: 1.2rem;
+        font-size: 1.2rem !important;
     }
     .cardFooterc p, .cardFooterb p{
         font-size:0.8rem;

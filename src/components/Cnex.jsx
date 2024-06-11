@@ -4,7 +4,7 @@ import Highlights from './Highlights'
 function Cnex() {
   return (
     <div className='cnex'>
-      <h1>Why <span className="colored underlined">Cnex ?</span></h1>
+      <h1 className='gap'>Why <span className="colored underlined">Cnex ?</span></h1>
       <div className="cards">
         <div className="carda">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FF785A" className="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
