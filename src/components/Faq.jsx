@@ -16,7 +16,7 @@ function Faq() {
   return (
     <div className='faqs' id='faq'>
       <div className="headerfaq">
-        <p className="colored">- FAQ</p>
+        <p className="colored">&#8212; FAQ</p>
         <h1><span className="colored underlined">Frequently</span> Asked Questions</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </p>
       </div>

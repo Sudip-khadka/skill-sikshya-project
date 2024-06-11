@@ -5,7 +5,7 @@ function ContactUs() {
   return (
     <div className='contact' id='contact'>
         <div className="texta">
-        <span className="colored">- Reach Out to Us</span>
+        <span className="colored">&#8212; Reach Out to Us</span>
         <h1><span className="colored underlined">Connect</span> With Us</h1>
         <p style={{color:'#555555'}} className='top-margin'> Fill out the form below, and we'll get back to you as soon as possible."</p>
         </div>
