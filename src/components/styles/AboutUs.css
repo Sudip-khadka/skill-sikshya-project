@@ -21,24 +21,14 @@
     gap:20px;
     position: relative;
 }
-.upimages{
-    display:flex;
-    gap:20px;
-    
-}
-.upimages .imageleft , .imageright{
-    display:flex;
-    flex-direction: column;
-    gap:20px;
-}
-.imagemiddle{
+.imageleft , .imageright,.imagemiddle{
     display:flex;
     flex-direction: column;
     gap:20px;
 }
 .imagemiddle .imagemiddlefirst{
     display: flex;
-    gap:20px;
+    gap:20px !important;
 }
 .ourstory{
     width:80%;
@@ -75,20 +65,34 @@
         width:80%;
     }
     .imagecontainers{
-        flex-direction: column;
-        gap:10px;
+        display: flex; /* Ensure the flex direction is column */
+        flex-wrap: wrap;
     }
-    .upimages, .imagemiddle, .imagemiddlefirst, .imagemiddle img{
+    .imageleft, .imageright {
+        width: 45% !important; /* Make images full width on mobile */
+    }
+    .imagemiddle {
+        order: 2; /* Move imagemiddle below */
+        width: 95%; /* Ensure it takes full width on mobile */
+    }
+    .imagemiddlefirst img{
+        width:47%;
+    }
+    .imageleft {
+        order: 1; /* Ensure imageleft is first */
+        width: 50%; /* Adjust width for left and right */
+    }
+    .imageright {
+        order: 1; /* Ensure imageright is alongside imageleft */
+        width: 50%; /* Adjust width for left and right */
+    }
+    .imagemiddlefirst, .upimages {
+        gap:10px !important;
+    }
+    .lastimage{
         width:100%;
     }
-    .upimages .imageleft, .upimages .imageright, .imagemiddlefirst img{
-        width:50%;
-    }
-    
     .ourstorycontent{
         flex-direction: column;
-    }
-    .imageleft, .imagemiddle ,.imageright, .imagemiddlefirst, .upimages{
-        gap:10px !important;
     }
 }

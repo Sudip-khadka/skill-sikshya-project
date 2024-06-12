@@ -20,17 +20,10 @@ function AboutUs() {
       <h1><span className="colored underlined">Pioneering Female</span> &#8212; Centric Solutions for the Modern Women</h1>
     </div>
       <div className="imagecontainers">
-        <div className="upimages">
             <div className="imageleft">
             <img src={Image1} alt="image1" srcSet="" />
             <img src={Image2} alt="image2" srcSet="" />
             </div>
-            <div className="imageright">
-                <img src={Image6} alt="image6" srcSet="" />
-                <img src={Image7} alt="image7" srcSet="" />
-                <img src={Image8} alt="image8" srcSet="" />
-            </div>
-        </div>
         <div className="imagemiddle">
             <div className="imagemiddlefirst">
             <img src={Image3} alt="image3" srcSet="" />
@@ -38,6 +31,11 @@ function AboutUs() {
             </div>
             <img src={Image5} alt="image5" srcSet="" className='lastimage'/>
         </div>
+            <div className="imageright">
+                <img src={Image6} alt="image6" srcSet="" />
+                <img src={Image7} alt="image7" srcSet="" />
+                <img src={Image8} alt="image8" srcSet="" />
+            </div>
       </div>
       <OurStory/>
       </div>
